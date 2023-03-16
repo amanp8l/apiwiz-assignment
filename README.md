@@ -6,3 +6,6 @@ Retrieve the currency values from an open currency API for the past 30 days and 
 Expose an endpoint that predicts a specific currency value on a given date based on the past 30 days' currency values
 Expose another endpoint that converts a given amount of USD to another G10 currency's value based on the most recent currency value.
 You can use sample cURL commands to test the endpoints and receive sample responses.
+
+curl --location --request GET http://localhost:8000/currency/exchange?destination=INR&base=2 rub
+curl --location --request GET http://localhost:8000/currency/predict?baseCurrency=INR&date=2023-04-30
